@@ -1,0 +1,16 @@
+{
+  "name": "bursch-travel-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "lucide-react": "0.263.1",
+    "@vercel/kv": "^1.0.0"
+  }
+}
