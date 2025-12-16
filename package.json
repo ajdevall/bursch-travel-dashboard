@@ -1,6 +1,7 @@
 {
   "name": "bursch-travel-dashboard",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,39 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "lucide-react": "0.263.1",
-    "@vercel/kv": "^1.0.0"
+    "@vercel/kv": "^1.0.0",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
   }
 }
+```
+4. Click **"Commit changes"**
+
+---
+
+## Now Redeploy in Vercel:
+
+1. Go back to your Vercel dashboard
+2. Go to your project
+3. Click **"Deployments"** tab
+4. Click **"Redeploy"** on the latest deployment
+
+OR just wait - Vercel should automatically redeploy when it sees the new GitHub commits!
+
+---
+
+## Your Final File Structure Should Look Like:
+```
+bursch-travel-dashboard/
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── pages/
+│   ├── _app.js
+│   ├── index.js
+│   └── api/
+│       └── entries.js
+└── styles/
+    └── globals.css
